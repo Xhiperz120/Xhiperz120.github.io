@@ -1,0 +1,56 @@
+
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil - Fahri Aziz Gunawan</title>
+  <link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+
+  <h1 class="highlight">Fahri Aziz Gunawan</h1>
+  <br>
+  <img src="image/fahri.jpg">
+  <p>Jika dunia ini tak bisa membedakan benar dan salah, maka aku yang akan menjatuhkan putusannya.</p>
+
+  <br><br>
+  <a href="Profil 1.html">
+    <button><<</button>
+  </a>
+  
+    <a href="Profil 3.html">
+    <button>>></button>
+  </a>
+  
+</body>
+</html>
+
+  
+  <audio id="musik" src="mp3/jk.mp3" loop></audio>
+
+  
+  <button id="speaker-btn">
+    <img id="icon" src="https://img.icons8.com/ios-filled/50/speaker.png" alt="Speaker">
+  </button>
+
+  <script>
+    const audio = document.getElementById("musik");
+    const btn = document.getElementById("speaker-btn");
+    const icon = document.getElementById("icon");
+
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+      if (isPlaying) {
+        audio.pause() ;
+        icon.src = "https://img.icons8.com/ios-filled/50/speaker.png"; 
+      } else {
+        audio.play();
+        icon.src = "https://img.icons8.com/ios-filled/50/high-volume.png"; 
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+
+</body>
+</html>

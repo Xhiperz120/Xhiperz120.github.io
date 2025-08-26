@@ -1,0 +1,60 @@
+
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil 1 - Desindra</title>
+  <link rel="stylesheet" href="style1.css" type="text/css" media="all" />
+</head>
+<body>
+  <h1 style="color:white">Desindra Yanuar</h1>
+  <img src="image/klein.jpg">
+  <p style="color: white;">Excuse me, little girl... this flower is perfect for you... please accept it..</p>
+  
+ 
+  <a href="Profil 2.html">
+    <button>next</button>
+  </a>
+</body>
+</html>
+
+
+
+<style>
+  body {
+    background: url('background/kleinbk.jpg') no-repeat center center fixed;
+    background-size: cover;
+    
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+  
+  <audio id="musik" src="mp3/letdon.mp3" loop></audio>
+
+  
+  <button id="speaker-btn">
+    <img id="icon" src="https://img.icons8.com/ios-filled/50/speaker.png" alt="Speaker">
+  </button>
+
+  <script>
+    const audio = document.getElementById("musik");
+    const btn = document.getElementById("speaker-btn");
+    const icon = document.getElementById("icon");
+
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+      if (isPlaying) {
+        audio.pause();
+        icon.src = "https://img.icons8.com/ios-filled/50/speaker.png"; 
+      } else {
+        audio.play();
+        icon.src = "https://img.icons8.com/ios-filled/50/high-volume.png"; 
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+
+</body>
+</html>
