@@ -53,4 +53,10 @@ a button {
   cursor: pointer
 }
 
+h1.highlight {
+  background-color: white;
+  color: black;
+  display: inline;
+  padding: 3px 6px;
+  border-radius: 4px;
 
