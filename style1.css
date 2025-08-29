@@ -60,4 +60,6 @@ p {
   margin-top: 15px;
   padding: 8px 12px;
   border-radius: 6px;
+position: absolute;
+ width : 150px;
 }
